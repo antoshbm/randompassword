@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password generator</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <h1>LOCK-P</h1>
+           
+             <nav>
+                <ul>
+                    <li><a href="contact1.html"><h4>Contact</h4></a></li>
+                    <li><a href="login.html"><h4>Login</h4></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+
+
+
+  
+    <div class="mmm">***PASSWORD***</div>
+    <div class="container">
+
+        <h2>Password Generator</h2>
+
+        <div class="display-content">
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+
+            <button data-copy>
+                <span data-copyMsg></span>
+                <img src="copyimage.png" alt="copy" width="23" height="23">
+            </button>
+        </div>
+
+        <!-- Password Length Section -->
+        <div class="input-container">
+
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+
+        </div>
+
+        <!-- Slider -->
+        <input type="range" min="0" max="20" class="slide" step="1" data-lengthSlider>
+
+        <!-- Check boxes -->
+        <!-- Upper CASE -->
+        <div>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Include Uppercase Letters</label>
+        </div>
+
+        <!-- Lower CASE -->
+        <div>
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Include lowercase Letters</label>
+        </div>
+
+        <!-- Numbers -->
+        <div>
+            <input type="checkbox" id="numbers">
+            <label for="Numbers">Include Numbers </label>
+        </div>
+
+        <!-- Symbols -->
+        <div>
+            <input type="checkbox" id="symbols">
+            <label for="Symbols">Include Symbols</label>
+        </div>
+
+        <!-- Strength Section -->
+        <div class="strength-container">
+            <p>Strength</p>
+            <div data-indicator></div>
+        </div>
+
+        <!-- generate password button -->
+        <button class="generateButton">Generate Password</button>
+
+    </div>
+    <div class="moving-text">***PROTECT----PASSWORD***</div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="about">
+                <h3>About Our Website</h3>
+                <p>Welcome to LOCK-P, your go-to destination for generating secure passwords. We provide a simple and efficient tool to create strong passwords tailored to your needs. Protect your accounts with confidence using LOCK-P!</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
